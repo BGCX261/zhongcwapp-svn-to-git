@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<drawable name="yellow">#ffff00</drawable>
+	<drawable name="white">#ffffff</drawable>
+	<drawable name="black">#000000</drawable>
+	<drawable name="blue">#558FF2</drawable>
+	
+	<drawable name="blue_accountName">#1e3d66</drawable>
+	<drawable name="black_contactName">#323232</drawable>
+	
+	<!--  -->
+	<drawable name="index_text">#0a2856</drawable>
+	<drawable name="index_number">#cb6501</drawable>
+	<drawable name="label_gray">#747474</drawable>
+	<!-- 卡片分割线 -->
+	<drawable name="line_sep">#b1bed2</drawable>
+	<!-- 列表分割线 -->
+	<drawable name="list_line_sep">#b9b9b9</drawable>
+	
+</resources>
+

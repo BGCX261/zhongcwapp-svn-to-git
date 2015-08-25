@@ -1,0 +1,20 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" style="@style/headerbar" >
+    	<Button
+    		android:id="@+id/headerBar_return"
+    		style="@style/headerbar_return"/>
+    	<TextView
+    		android:id="@+id/headerBar_title"
+    		android:layout_width="wrap_content" 
+	   		android:layout_height="wrap_content"
+	   		android:layout_centerInParent="true"
+	   		android:textColor="@drawable/return_text"
+	   		android:textSize="24px"
+	   		android:text="应收日报" />
+	   	<ImageView
+    		android:src="@drawable/arrow_left"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_alignLeft="@id/headerBar_return"
+    		android:layout_centerVertical="true"
+    		android:layout_marginLeft="5dp" />
+    </RelativeLayout>

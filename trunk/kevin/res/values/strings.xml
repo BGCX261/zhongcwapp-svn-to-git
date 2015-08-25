@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ufida CRM</string>
+    
+<!-- 客户模块 -->
+    <!-- 客户明细（Form）-->
+    <string name="contactName">客户姓名</string>
+    <string name="accountName">公司名称</string>
+    <string name="note">业务描述</string>
+    <string name="phone">办公电话</string>
+    <string name="mobile">移动电话</string>
+    <string name="website">公司主页</string>
+    <string name="email">电子邮件</string>
+    <!-- 菜单 -->
+    <string name="menu_add">添加客户</string>
+    <string name="menu_delete">删除客户</string>
+    <string name="menu_edit">编辑客户</string>
+    <string name="menu_search">GridLayout</string>
+    <!-- 按钮 -->
+    <string name="saveButton">保存</string>
+    <string name="cancelButton">取消</string>
+    <!-- 提示信息 -->
+    <string name="no_notes">没有记录</string>
+    <string name="accountList">客户列表</string>
+    <string name="accountForm">客户明细</string>
+	
+<!-- 日程模块 --> 
+	<!-- 日程明细（Form）-->   
+    <string name="calendar_subject">主题</string>
+    <string name="calendar_start_time">开始时间</string>
+    <string name="calendar_end_time">结束时间</string>
+    <string name="calendar_note">备注</string>
+    <string name="calendar_repeat_type">重复频率</string>
+    <!-- 菜单 -->
+    <string name="menu_calendar">日历 </string>
+    <string name="menu_calendar_list">日程列表</string>
+    <!-- 按钮 -->
+    <string name="calendar_add">新建</string>
+    <string name="calendar_sync">同步</string>
+    <string name="account_sync">同步客户</string>
+    <string name="calendar_saveButton">保存</string>
+    <string name="calendar_cancelButton">取消</string>
+    <!-- 提示信息 -->
+    <string name="calendar">日程</string>
+    <string name="grid">Grid</string>
+    <string name="calendarForm">日程明细</string>
+    <string name="calendarList">日程列表</string>
+    
+    <string name="choose_repeat_type">选择重复类型</string>
+    <string name="checkbox_all_day">全天</string>
+    
+    <string name="startDate">开始日期</string>
+    <string name="startTime">开始时间</string>
+    <string name="endDate">结束日期</string>
+    <string name="endTime">结束时间</string>
+    
+    <string name="menu_5">子菜单</string>
+    <string name="menu_6">选项 666</string>
+    <string name="menu_7">选项 777</string>
+    <string name="menu_8">选项 888</string>
+    
+    <string name="context_menu_edit">编辑选项</string>
+    <string name="context_menu_delete">删除选项 </string>
+    
+    <string name="submenu_1">子选项  AAA</string>
+    <string name="submenu_2">子选项  BBB</string>
+    <string name="submenu_3">子选项  CCC</string>
+    
+    <string name="button_a">A</string>
+</resources>

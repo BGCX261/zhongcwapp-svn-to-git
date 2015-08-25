@@ -1,0 +1,8 @@
+<searchable xmlns:android="http://schemas.android.com/apk/res/android"
+	android:label="@string/search_label" android:hint="@string/search_hint"
+	android:searchMode="showSearchLabelAsBadge"
+	android:searchSettingsDescription="suggests urls"
+	android:includeInGlobalSearch="true"
+	android:searchSuggestAuthority="com.ufida.gkb.accounts"
+	android:searchSuggestIntentAction="android.intent.action.VIEW"
+	android:searchSuggestSelection=" ? " />

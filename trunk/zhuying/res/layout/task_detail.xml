@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/login_background">
+  	
+    <include layout="@layout/header"/>
+    
+    <RelativeLayout
+        android:id="@+id/task_subject_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white" >
+        <TextView
+            android:id="@+id/plan_detail_date_label" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@drawable/action_gray_shallow"
+            android:layout_marginLeft="15px"
+            android:layout_marginTop="15px"
+            android:text="计划时间：" />
+        <TextView
+            android:id="@+id/plan_detail_date" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@drawable/black"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15px"
+            android:layout_toRightOf="@id/plan_detail_date_label" />
+        <TextView
+            android:id="@+id/plan_detail_type" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@drawable/white"
+            android:layout_marginTop="15px"
+            android:layout_marginLeft="90dp"
+            android:layout_toRightOf="@id/plan_detail_date" />
+        <ImageView
+            android:id="@+id/record_arrow"
+            android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:src="@drawable/record_right_arrow_deep"
+		    android:layout_alignParentRight="true"
+		    android:layout_centerVertical="true"
+		    android:layout_marginRight="10px" />
+        <TextView
+	        android:id="@+id/plan_detail_body" 
+	        android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content"
+	        android:textColor="@drawable/black"
+	        android:layout_below="@id/plan_detail_date"
+	        android:layout_marginLeft="15px"
+	        android:layout_marginTop="15px"
+	        android:layout_marginRight="25px"
+	        android:paddingBottom="10dp" />
+    </RelativeLayout>
+    
+    
+    <Button
+        android:id="@+id/plan_detail_done" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/task_done_selector" />
+    
+    <TextView
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:textColor="@drawable/black"
+		android:text="移动到"
+		android:textSize="18sp"
+		android:paddingLeft="10dp"
+		android:layout_marginTop="60dp"
+		android:id="@+id/moveto_text" />
+    <LinearLayout
+        android:id="@+id/moveto_layout"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical"
+    	android:background="@drawable/round_rect"
+    	android:layout_marginLeft="15px"
+    	android:layout_marginRight="15px"
+    	android:layout_marginTop="10dp"
+    	android:padding="1dp" >
+    	<TextView
+    	    android:id="@+id/moveto_today"
+			android:layout_width="fill_parent" 
+		    android:layout_height="40dp"
+		    android:textColor="@drawable/black"
+		    android:text="今天"
+		    android:paddingLeft="15px"
+		    android:gravity="center_vertical"
+		    android:background="@drawable/moveto_selector_top" />
+    	<include layout="@layout/setting_divider"/>
+    	<TextView
+    	    android:id="@+id/moveto_tomorrow"
+			android:layout_width="fill_parent" 
+		    android:layout_height="40dp"
+		    android:textColor="@drawable/black"
+		    android:text="明天"
+		    android:paddingLeft="15px"
+		    android:gravity="center_vertical"
+		    android:background="@drawable/moveto_selector_middle" />
+    	<include layout="@layout/setting_divider"/>
+    	<TextView
+    	    android:id="@+id/moveto_thisweek"
+			android:layout_width="fill_parent" 
+		    android:layout_height="40dp"
+		    android:textColor="@drawable/black"
+		    android:text="本周"
+		    android:paddingLeft="15px"
+		    android:gravity="center_vertical"
+		    android:background="@drawable/moveto_selector_middle" />
+    	<include layout="@layout/setting_divider"/>
+    	<TextView
+    	    android:id="@+id/moveto_nextweek"
+			android:layout_width="fill_parent" 
+		    android:layout_height="40dp"
+		    android:textColor="@drawable/black"
+		    android:text="下周"
+		    android:paddingLeft="15px"
+		    android:gravity="center_vertical"
+		    android:background="@drawable/moveto_selector_middle" />
+    	<include layout="@layout/setting_divider"/>
+    	
+    	<TextView
+    	    android:id="@+id/moveto_specific"
+			android:layout_width="fill_parent" 
+		    android:layout_height="40dp"
+		    android:textColor="@drawable/black"
+		    android:text="更迟的"
+		    android:paddingLeft="15px"
+		    android:gravity="center_vertical"
+		    android:background="@drawable/moveto_selector_bottom" />
+    </LinearLayout>
+</LinearLayout>

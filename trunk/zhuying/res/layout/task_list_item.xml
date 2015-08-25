@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+    <!-- Group -->
+    <TextView
+        android:id="@+id/group"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:background="@drawable/pinyin_divider"
+        android:paddingLeft="10dip"
+        android:textColor="@drawable/black"
+        android:visibility="gone" />
+    
+	     <!-- 时间 
+	     <TextView
+	        android:id="@+id/date"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:singleLine="true"
+	        android:textColor="@drawable/black"
+	        android:layout_marginLeft="10px" />-->
+	     <ImageView
+	         android:id="@+id/right_arrow"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:src="@drawable/div_right"
+	         android:layout_alignParentRight="true"
+	         android:layout_marginRight="10px"
+	         android:layout_centerVertical="true" />
+	     <!-- 类型 -->
+	     <TextView
+	        android:id="@+id/type"
+	        android:layout_width="50dp"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10px"
+	        android:singleLine="true"
+	        android:textColor="@drawable/white"
+	        android:layout_toLeftOf="@id/right_arrow"
+	        android:layout_marginRight="10px"
+	        android:ellipsize="end"
+	        android:layout_below="@id/group"
+	        android:textSize="16sp"
+	        android:layout_centerVertical="true" />
+	     <!-- 所有者 -->
+	     <TextView
+	        android:id="@+id/owner"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:singleLine="true"
+	        android:textColor="@drawable/black"
+	        android:layout_marginLeft="10px"
+	        android:ellipsize="end"
+	        android:layout_below="@id/group"
+	        android:textSize="16sp" />
+	     <!-- 内容 -->
+	     <TextView
+	        android:id="@+id/name"
+	        android:layout_width="200dp"
+	        android:layout_height="wrap_content"
+	        android:singleLine="true"
+	        android:textColor="@drawable/black"
+	        android:ellipsize="end"
+	        android:layout_toRightOf="@id/owner"
+	        android:layout_below="@id/group"
+	        android:textSize="16sp" />
+	     <!-- 关联对象 -->
+	     <TextView
+	        android:id="@+id/subject_name"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="@drawable/action_gray_shallow"
+	        android:layout_marginLeft="10px"
+	        android:layout_below="@id/name" />
+	     
+</RelativeLayout>

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="fill">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">fill_parent</item>
+	</style>
+	<style name="row" parent="fill">
+		<item name="android:layout_marginLeft">20px</item>
+		<item name="android:layout_marginTop">10px</item>
+		<item name="android:layout_marginRight">20px</item>
+		<item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+		<item name="android:textColor">@drawable/black</item>
+	</style>
+	<style name="two_row_1st_item">
+		<item name="android:layout_marginLeft">20px</item>
+		<item name="android:layout_marginTop">6px</item>
+		<item name="android:layout_marginRight">20px</item>
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+		<item name="android:textColor">@drawable/black</item>
+	</style>
+	<style name="two_row_2nd_item">
+		<item name="android:layout_marginLeft">20px</item>
+		<item name="android:layout_marginTop">4px</item>
+		<item name="android:layout_marginRight">20px</item>
+		<item name="android:layout_marginBottom">6px</item>
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+		<item name="android:textColor">@drawable/blue</item>
+		<!-- 
+			<item name="android:textColor">@drawable/yellow</item>
+		 -->
+	</style>
+	<style name="one_row_1st_item">
+		<item name="android:layout_marginLeft">20px</item>
+		<item name="android:layout_marginTop">24px</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+		<item name="android:textColor">@drawable/black</item>
+	</style>
+	<style name="one_row_2nd_item">
+		<item name="android:layout_marginLeft">15px</item>
+		<item name="android:layout_marginTop">24px</item>
+		<item name="android:layout_marginRight">20px</item>
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+	</style>
+	<style name="btn">
+		<item name="android:layout_marginTop">10px</item>
+		<item name="android:layout_marginBottom">10px</item>
+		<item name="android:layout_marginLeft">10px</item>
+		<item name="android:layout_marginRight">10px</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_weight">1</item>
+		<item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+	</style>
+	<style name="plain_text">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_marginTop">24px</item>
+		<item name="android:layout_marginLeft">20px</item>
+		<item name="android:layout_marginRight">20px</item>
+		<item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+		<item name="android:textColor">@drawable/black</item>
+	</style>
+	<style name="simple_text">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+	</style>
+	<style name="toolbar">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_marginTop">10px</item>
+		<item name="android:layout_marginBottom">10px</item>
+	</style>
+	<style name="icon">
+		<item name="android:layout_width">32px</item>
+		<item name="android:layout_height">32px</item>
+		<item name="android:layout_gravity">center_vertical</item>
+		<item name="android:layout_marginRight">10px</item>
+	</style>
+	
+	
+	<!-- 旺铺助手 -->
+	<style name="shop_two_row_1st_item">
+		<item name="android:layout_marginTop">10px</item>
+		<item name="android:layout_marginLeft">10px</item>
+		<item name="android:layout_marginBottom">10px</item>
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textSize">32px</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textColor">@drawable/index_text</item>
+	</style>
+	<style name="shop_two_row_2nd_item">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_marginTop">10px</item>
+		<item name="android:layout_marginBottom">10px</item>
+		<item name="android:layout_marginRight">10px</item>
+		<item name="android:gravity">right</item>
+		<item name="android:textSize">32px</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textColor">@drawable/index_number</item>
+	</style>
+	
+	<style name="shop_label">
+		<item name="android:layout_marginTop">10px</item>
+		<item name="android:layout_marginLeft">10px</item>
+		<item name="android:layout_marginRight">5px</item>
+		<item name="android:layout_marginBottom">10px</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textSize">28px</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textColor">@drawable/label_gray</item>
+	</style>
+	<!-- 首页：文本 -->
+	<style name="shop_index_text">
+		<item name="android:layout_marginTop">4px</item>
+		<item name="android:layout_marginLeft">10px</item>
+		<item name="android:layout_marginBottom">4px</item>
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textSize">32px</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textColor">@drawable/index_text</item>
+	</style>
+	<!-- 首页：数字 -->
+	<style name="shop_index_number">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_marginTop">4px</item>
+		<item name="android:layout_marginBottom">4px</item>
+		<item name="android:layout_marginRight">10px</item>
+		<item name="android:gravity">right</item>
+		<item name="android:textSize">32px</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textColor">@drawable/index_number</item>
+	</style>
+	
+	<!-- 客户： 文本（第一行）-->
+	<style name="shop_account_1st">
+		<item name="android:layout_marginTop">4px</item>
+		<item name="android:layout_marginLeft">10px</item>
+		<item name="android:layout_marginBottom">4px</item>
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textSize">32px</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textColor">@drawable/index_text</item>
+	</style>
+	<!-- 客户： 文本（第二行）-->
+	<style name="shop_account_2nd">
+		<item name="android:layout_marginTop">4px</item>
+		<item name="android:layout_marginLeft">10px</item>
+		<item name="android:layout_marginBottom">4px</item>
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textSize">32px</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textColor">@drawable/index_text</item>
+	</style>
+	
+	
+	<!-- 小版 -->
+	<!-- 首页：文本 -->
+	<style name="small_shop_index_text">
+		<item name="android:layout_marginTop">1px</item>
+		<item name="android:layout_marginLeft">10px</item>
+		<item name="android:layout_marginBottom">1px</item>
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textSize">16px</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textColor">@drawable/index_text</item>
+	</style>
+	<style name="small_shop_two_row_2nd_item">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_marginTop">1px</item>
+		<item name="android:layout_marginBottom">1px</item>
+		<item name="android:layout_marginRight">10px</item>
+		<item name="android:gravity">right</item>
+		<item name="android:textSize">16px</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textColor">@drawable/index_number</item>
+	</style>
+	<style name="small_shop_two_row_1st_item">
+		<item name="android:layout_marginTop">1px</item>
+		<item name="android:layout_marginLeft">10px</item>
+		<item name="android:layout_marginBottom">1px</item>
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textSize">16px</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textColor">@drawable/index_text</item>
+	</style>
+	<style name="small_shop_account_1st">
+		<item name="android:layout_marginTop">1px</item>
+		<item name="android:layout_marginLeft">10px</item>
+		<item name="android:layout_marginBottom">1px</item>
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textSize">16px</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textColor">@drawable/index_text</item>
+	</style>
+	<style name="small_shop_label">
+		<item name="android:layout_marginTop">1px</item>
+		<item name="android:layout_marginLeft">10px</item>
+		<item name="android:layout_marginRight">5px</item>
+		<item name="android:layout_marginBottom">1px</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textSize">16px</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textColor">@drawable/label_gray</item>
+	</style>
+</resources>

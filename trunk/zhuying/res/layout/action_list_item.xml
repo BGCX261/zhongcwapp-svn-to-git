@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/action_layout"
+    android:background="@drawable/listview_item_selector" >
+    	<ImageView
+	         android:id="@+id/action_type_img"
+	         android:layout_width="50dp"
+	         android:layout_height="50dp"
+	         android:layout_marginLeft="4dp"
+	         android:scaleType="centerInside" />
+	     <!-- 关联对象名称 -->
+	     <TextView
+	        android:id="@+id/subjectName"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:singleLine="true"
+	        android:textColor="@drawable/black"
+	        android:textSize="16sp"
+	        android:layout_marginLeft="10px"
+	        android:layout_toRightOf="@id/action_type_img"
+	        android:layout_marginRight="50dp" />
+	     <!-- 日期 -->
+	     <TextView
+	        android:id="@+id/date"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:singleLine="true"
+	        android:textColor="@drawable/black"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="5dp" />
+	     <!-- 记录人 -->
+	     <TextView
+	        android:id="@+id/record_person"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:singleLine="true"
+	        android:textColor="@drawable/action_gray_shallow"
+	        android:layout_marginLeft="10px"
+	        android:layout_below="@id/subjectName"
+	        android:layout_toRightOf="@id/action_type_img"
+	        android:visibility="gone" />
+	     <!-- 右箭头 -->
+	     <ImageView
+	         android:id="@+id/right_arrow"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:src="@drawable/record_right_arrow_deep"
+	         android:layout_alignParentRight="true"
+	         android:layout_marginRight="10px"
+	         android:layout_centerVertical="true"
+	         android:visibility="gone" />
+	     <!-- 内容 -->
+	     <TextView
+	        android:id="@+id/name"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="@drawable/action_gray"
+	        android:layout_marginLeft="10px"
+	        android:layout_below="@id/record_person"
+	        android:layout_toRightOf="@id/action_type_img"
+	        android:layout_toLeftOf="@id/right_arrow"
+	        android:maxLines="2"
+	        android:ellipsize="end"
+	        android:paddingBottom="5dp" />
+</RelativeLayout>

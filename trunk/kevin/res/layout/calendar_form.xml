@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+    <TableLayout android:layout_width="fill_parent"
+                 android:layout_height="fill_parent">
+        <!-- 主题 -->
+        <TableRow>
+            <TextView android:text="@string/calendar_subject"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"/>
+            <EditText android:id="@+id/calendar_subjectEditText"
+                      android:layout_height="wrap_content"
+                      android:layout_width="fill_parent"
+                      android:layout_weight="1"/>
+        </TableRow>
+        <!-- 开始时间 -->
+        <TableRow>
+            <TextView android:text="@string/calendar_start_time"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"/>
+              <Button android:id="@+id/startDate"
+            		  android:layout_width="wrap_content"
+            		  android:layout_height="wrap_content"
+                      android:text="@string/startDate"/>
+              <Button android:id="@+id/startTime"
+            		  android:layout_width="wrap_content"
+            		  android:layout_height="wrap_content"
+                      android:text="@string/startTime"/>
+        </TableRow>
+        <!-- 结束时间 -->
+        <TableRow>
+            <TextView android:text="@string/calendar_end_time"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"/>
+              <Button android:id="@+id/endDate"
+            		  android:layout_width="wrap_content"
+            		  android:layout_height="wrap_content"
+                      android:text="@string/endDate"/>
+              <Button android:id="@+id/endTime"
+            		  android:layout_width="wrap_content"
+            		  android:layout_height="wrap_content"
+                      android:text="@string/endTime"/>          
+        </TableRow>
+        <!-- 全天事件 -->
+        <TableRow>
+        	<CheckBox android:id="@+id/checkbox_all_day"
+            		  android:paddingBottom="24sp"
+	        		  android:paddingTop="24sp"
+            		  android:layout_width="wrap_content"
+            		  android:layout_height="wrap_content"
+            		  android:text="@string/checkbox_all_day" />
+        </TableRow>
+        <!-- 备注 -->
+        <TableRow>
+            <TextView android:text="@string/calendar_note"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"/>
+            <EditText android:id="@+id/calendar_noteEditText"
+                      android:layout_height="wrap_content"
+                      android:layout_width="fill_parent"
+                      android:layout_weight="1"/>
+        </TableRow>
+        <!-- 重复频率 -->
+        <TableRow>
+            <TextView
+        			  android:layout_width="fill_parent"
+        			  android:layout_height="wrap_content"
+                      android:text="@string/calendar_repeat_type"
+            />
+             <Spinner android:id="@+id/spinner_repeat_type"
+        			  android:layout_width="fill_parent"
+        			  android:layout_height="wrap_content"
+                      android:drawSelectorOnTop="true"
+        			  android:prompt="@string/choose_repeat_type"
+    		/>
+        </TableRow>
+        <!-- 按钮 -->
+        <TableRow>
+            <Button android:id="@+id/calendar_saveButton"
+                    android:text="@string/calendar_saveButton"/>
+            <Button android:id="@+id/calendar_cancelButton"
+                    android:text="@string/calendar_cancelButton"/>
+        </TableRow>
+    </TableLayout>
+</ScrollView>

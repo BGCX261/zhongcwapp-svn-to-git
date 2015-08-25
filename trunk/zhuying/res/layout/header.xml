@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+      	xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+    	android:layout_height="44dp"
+    	android:orientation="vertical"
+    	android:background="@drawable/headerbar_bg" >
+    	<Button
+    	    android:id="@+id/header_left_btn"  
+    	    android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:textColor="@drawable/white"
+    		android:textSize="16sp"
+    		android:layout_centerInParent="true"
+    		android:layout_alignParentLeft="true"
+    		android:layout_marginLeft="10dp"
+    		android:background="@drawable/header_left_button_selector"
+    		android:visibility="gone" />
+    	<TextView
+    	    android:id="@+id/header_title" 
+    	    android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:textColor="@drawable/white"
+    		android:textSize="20sp"
+    		android:layout_centerInParent="true" />
+    	<!-- 计划任务下箭头 -->
+    	<ImageView
+    	    android:id="@+id/task_down_icon"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_toRightOf="@id/header_title"
+    	    android:layout_centerInParent="true"
+    	    android:visibility="gone"
+    	    android:layout_marginLeft="5dp" />
+    	<Button
+    	    android:id="@+id/header_right_btn"  
+    	    android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:textColor="@drawable/white"
+    		android:textSize="16sp"
+    		android:layout_centerInParent="true"
+    		android:layout_alignParentRight="true"
+    		android:layout_marginRight="6dp"
+    		android:background="@drawable/header_right_button_selector" />
+    </RelativeLayout>

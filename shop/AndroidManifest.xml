@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.ufida.gkb" android:versionCode="7" android:versionName="1.1.3">
+	<application 
+		android:label="旺铺助手" 
+		android:icon="@drawable/icon"
+		android:theme="@android:style/Theme.NoTitleBar" >
+		
+		<!-- 
+		<activity android:name=".test.ContactTest">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		 -->
+		
+		 
+		<activity android:name=".activity.LoginActivity">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<!--
+			<activity android:name=".activity.ShopListActivity">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity> -->
+	
+		<activity android:name=".activity.ShopListActivity" />
+		<activity android:name=".activity.IndexActivity" />
+		<activity android:name=".activity.MainActivity" /> 
+		
+		<!-- 
+		<activity android:name=".test.TelephoneTest" android:label="读取手机号" /> 
+		
+		 -->
+		<activity android:name=".activity.SetActivity" /> 
+		<activity android:name=".activity.AboutActivity" /> 
+
+		<!-- 客户 -->
+		<activity android:name=".activity.AccountListActivity"
+			android:label="@string/accountList" android:launchMode="singleTop">
+			<meta-data android:name="android.app.default_searchable"
+				android:value=".activity.AccountListActivity" />
+			<intent-filter>
+				<action android:name="android.intent.action.SEARCH" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW"></action>
+				<category android:name="android.intent.category.DEFAULT" />
+				<data android:mimeType="vnd.android.cursor.dir/vnd.gkb.account" />
+			</intent-filter>
+			<meta-data android:name="android.app.searchable"
+				android:resource="@xml/searchable" />
+		</activity>
+		<activity android:name=".activity.AccountViewActivity"
+			android:label="@string/accountView">
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW"></action>
+				<category android:name="android.intent.category.DEFAULT" />
+				<data android:mimeType="vnd.android.cursor.item/vnd.gkb.account" />
+			</intent-filter>
+		</activity>
+		
+		<!-- 库存 -->
+		<activity android:name=".activity.StoreActivity" />
+		<activity android:name=".activity.StoreListActivity"
+			 android:launchMode="singleTop">
+			<meta-data android:name="android.app.default_searchable"
+				android:value=".activity.StoreListActivity" />
+			<intent-filter>
+				<action android:name="android.intent.action.SEARCH" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW"></action>
+				<category android:name="android.intent.category.DEFAULT" />
+				<data android:mimeType="vnd.android.cursor.dir/vnd.gkb.store" />
+			</intent-filter>
+			<meta-data android:name="android.app.searchable"
+				android:resource="@xml/searchable" />
+		</activity>
+
+		<activity android:name=".activity.ReportListActivity" />
+		<activity android:name=".activity.ReportActivity" />
+		
+		<!-- Content Provider -->
+		<provider android:name=".dao.AccountProvider"
+			android:authorities="com.ufida.gkb.accounts" />
+		<provider android:name=".dao.StoreProvider"
+			android:authorities="com.ufida.gkb.stores" />
+
+		<!-- Service -->
+	</application>
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.CALL_PHONE" />
+	<uses-permission android:name="android.permission.SEND_SMS" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.READ_CONTACTS" />
+	<uses-permission android:name="android.permission.WRITE_CONTACTS" />
+	<uses-permission android:name="android.permission.VIBRATE" />
+
+	<uses-sdk android:minSdkVersion="4" />
+</manifest> 

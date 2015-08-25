@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/login_background" >
+    
+    <include layout="@layout/header"/>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+    	android:layout_height="220dp"
+    	android:orientation="vertical"
+    	android:background="@drawable/round_rect"
+    	android:layout_marginTop="10dp"
+    	android:layout_marginLeft="10dp"
+    	android:layout_marginRight="10dp"
+    	android:layout_marginBottom="5dp">
+    	<LinearLayout 
+    	    android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:orientation="vertical">
+    	    <TextView
+    	    	android:id="@+id/current_user" 
+    	        android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:textColor="@drawable/black"
+    			android:layout_gravity="center_horizontal"
+    			android:layout_marginTop="30dp"
+    			android:text="当前登录帐户老刘" />
+    	    <View android:layout_width="180dp" 
+   				android:layout_height="1dp" 
+    			android:background="@drawable/gray"
+    			android:layout_gravity="center_horizontal"
+    			android:layout_marginTop="5dp" />
+    	</LinearLayout>
+    	
+    	<Button
+    	    android:id="@+id/sync_btn" 
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_gravity="center_horizontal"
+    	    android:layout_marginTop="15dp"
+    	    android:background="@drawable/setting_button_selector"
+    	    android:text="同步数据"
+    	    android:textSize="20sp"
+    		android:textColor="@drawable/white"/>
+    	<View android:layout_width="180dp" 
+   				android:layout_height="1dp" 
+    			android:background="@drawable/gray"
+    			android:layout_gravity="center_horizontal"
+    			android:layout_marginTop="5dp" />
+    	<TextView
+    	    	android:id="@+id/logout" 
+    	        android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="退出登录"
+    			android:textColor="@drawable/black"
+    			android:layout_gravity="center_horizontal"
+    			android:layout_marginTop="20dp"/>
+    	<View android:layout_width="280dp" 
+   				android:layout_height="1dp" 
+    			android:background="@drawable/gray"
+    			android:layout_gravity="center_horizontal"
+    			android:layout_marginTop="5dp" />
+    	<LinearLayout 
+    	    android:layout_width="fill_parent"
+    		android:layout_height="40dp"
+    		android:orientation="horizontal"
+    		android:layout_marginTop="15dp" >
+    	    <TextView 
+    	        android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="WiFi下自动同步"
+    			android:textColor="@drawable/black"
+    			android:layout_marginLeft="15dp"
+    			android:layout_gravity="center_vertical"/>
+    	    <CheckBox
+    	        android:id="@+id/wifi_sync" 
+    	        android:layout_width="wrap_content" 
+    	        android:layout_height="wrap_content"
+    	        android:layout_gravity="right"
+    	        android:checked="true"/>
+    	</LinearLayout>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical"
+    	android:background="@drawable/round_rect"
+    	android:layout_marginTop="10dp"
+    	android:layout_marginLeft="10dp"
+    	android:layout_marginRight="10dp" >
+    	<RelativeLayout
+    	    android:id="@+id/setting_suggest" 
+    	    android:layout_width="fill_parent"
+    		android:layout_height="33dp"
+    		android:orientation="horizontal"
+    		android:background="@drawable/moveto_selector_top">
+    	    <ImageView
+    	        android:id="@+id/feed_img" 
+    	        android:layout_width="wrap_content" 
+    	        android:layout_height="wrap_content"
+    	        android:src="@drawable/setting_feedback"
+    	        android:layout_marginLeft="15dp"
+    	        android:layout_centerVertical="true"/>
+    	    <TextView 
+    	        android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="反馈意见"
+    			android:textColor="@drawable/black"
+    			android:layout_marginLeft="5dp"
+    			android:layout_centerVertical="true"
+    			android:layout_toRightOf="@id/feed_img"/>
+    	    <ImageView
+		        android:id="@+id/right_arrow"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentRight="true"
+		        android:layout_centerVertical="true"
+		        android:layout_marginRight="10px"
+		        android:src="@drawable/div_right" />
+    	</RelativeLayout>
+    	<include layout="@layout/setting_divider"/>
+    	
+    	<RelativeLayout 
+    	    android:layout_width="fill_parent"
+    		android:layout_height="33dp"
+    		android:orientation="horizontal"
+    		android:id="@+id/setting_update"
+    		android:background="@drawable/moveto_selector_middle" >
+    	    <ImageView
+    	        android:id="@+id/update_img"  
+    	        android:layout_width="wrap_content" 
+    	        android:layout_height="wrap_content"
+    	        android:src="@drawable/setting_update"
+    	        android:layout_marginLeft="15dp"
+    	        android:layout_centerVertical="true"/>
+    	    <TextView 
+    	        android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="检查更新"
+    			android:textColor="@drawable/black"
+    			android:layout_marginLeft="5dp"
+    			android:layout_centerVertical="true"
+    			android:layout_toRightOf="@id/update_img"/>
+    	    <ImageView
+		        android:id="@+id/right_arrow"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentRight="true"
+		        android:layout_centerVertical="true"
+		        android:layout_marginRight="10px"
+		        android:src="@drawable/div_right" />
+    	</RelativeLayout>
+    	<include layout="@layout/setting_divider"/>
+    	
+    	<RelativeLayout 
+    	    android:layout_width="fill_parent"
+    		android:layout_height="33dp"
+    		android:orientation="horizontal"
+    		android:id="@+id/setting_about"
+    		android:background="@drawable/moveto_selector_bottom" >
+    	    <ImageView
+    	        android:id="@+id/about_img"   
+    	        android:layout_width="wrap_content" 
+    	        android:layout_height="wrap_content"
+    	        android:src="@drawable/setting_about"
+    	        android:layout_marginLeft="15dp"
+    	        android:layout_centerVertical="true"/>
+    	    <TextView 
+    	        android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="关于"
+    			android:textColor="@drawable/black"
+    			android:layout_marginLeft="5dp"
+    			android:layout_centerVertical="true"
+    			android:layout_toRightOf="@id/about_img"/>
+    	    <ImageView
+		        android:id="@+id/right_arrow"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentRight="true"
+		        android:layout_centerVertical="true"
+		        android:layout_marginRight="10px"
+		        android:src="@drawable/div_right" />
+    	</RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

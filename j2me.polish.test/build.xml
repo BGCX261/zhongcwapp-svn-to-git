@@ -1,0 +1,27 @@
+<project name="MyPolish" default="j2mepolish">
+	<property name="polish.home" location="D:\J2ME-Polish2.1.4" />
+	<property name="wtk.home" location="D:\WTK2.5.2" />
+
+	<taskdef name="j2mepolish" 
+		classname="de.enough.polish.ant.PolishTask" 
+		classpath="${polish.home}/lib/enough-j2mepolish-build.jar"
+	/>
+	
+	<target name="j2mepolish">
+		<j2mepolish>
+			<info license="GPL" name="MyDemo" vendorName="wecoo" version="1.0.0" jarName="${polish.vendor}-${polish.name}-zcw.jar" />
+			<deviceRequirements>
+				<requirement name="Identifier" value="Generic/Midp2Cldc11" />
+			</deviceRequirements>
+			<build usePolishGui="true">
+				<midlet class="MainMidlet" />
+				<midlet class="com.zhongcw.TabbedFormDemo" />
+			</build>
+			<emulator />
+		</j2mepolish>
+	</target>
+	<target name="clean">
+		<delete dir="build" />
+		<delete dir="dist" />
+	</target>
+</project>

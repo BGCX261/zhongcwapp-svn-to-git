@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_float_window"
+    android:layout_gravity="center_horizontal" >
+    
+    <TextView
+        android:id="@+id/all"
+    	android:layout_width="fill_parent" 
+        android:layout_height="30dp"
+    	android:textSize="16.0sp"
+    	android:textColor="@drawable/black"
+    	android:text="全部"
+    	android:gravity="center" />
+    <include layout="@layout/float_divider"/>
+    <TextView
+        android:id="@+id/outdate"
+    	android:layout_width="fill_parent" 
+        android:layout_height="30dp"
+    	android:textSize="16.0sp"
+    	android:textColor="@drawable/black"
+    	android:text="已过期"
+    	android:gravity="center" />
+    <include layout="@layout/float_divider"/>
+    <TextView
+        android:id="@+id/today"
+    	android:layout_width="fill_parent" 
+        android:layout_height="30dp"
+    	android:textSize="16.0sp"
+    	android:textColor="@drawable/black"
+    	android:text="今天"
+    	android:gravity="center" />
+    <include layout="@layout/float_divider"/>
+    <TextView
+        android:id="@+id/tomorrow"
+    	android:layout_width="fill_parent" 
+        android:layout_height="30dp"
+    	android:textSize="16.0sp"
+    	android:textColor="@drawable/black"
+    	android:text="明天"
+    	android:gravity="center" />
+    <include layout="@layout/float_divider"/>
+    <TextView
+        android:id="@+id/thisweek"
+    	android:layout_width="fill_parent" 
+        android:layout_height="30dp"
+    	android:textSize="16.0sp"
+    	android:textColor="@drawable/black"
+    	android:text="本周"
+    	android:gravity="center" />
+    <include layout="@layout/float_divider"/>
+    <TextView
+        android:id="@+id/nextweek"
+    	android:layout_width="fill_parent" 
+        android:layout_height="30dp"
+    	android:textSize="16.0sp"
+    	android:textColor="@drawable/black"
+    	android:text="下周"
+    	android:gravity="center" />
+    <include layout="@layout/float_divider"/>
+    <TextView
+        android:id="@+id/specify"
+    	android:layout_width="fill_parent" 
+        android:layout_height="30dp"
+    	android:textSize="16.0sp"
+    	android:textColor="@drawable/black"
+    	android:text="更迟的"
+    	android:gravity="center" />
+    <include layout="@layout/float_divider"/>
+     <TextView
+        android:id="@+id/finish"
+    	android:layout_width="fill_parent" 
+        android:layout_height="30dp"
+    	android:textSize="16.0sp"
+    	android:textColor="@drawable/black"
+    	android:text="已完成"
+    	android:gravity="center" />
+</LinearLayout>

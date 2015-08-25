@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+    <TableLayout android:layout_width="fill_parent"
+                 android:layout_height="fill_parent">
+        <!-- 1 -->
+        <TableRow>
+            <TextView android:text="@string/contactName"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"/>
+            <EditText android:id="@+id/contactNameEditText"
+                      android:layout_height="wrap_content"
+                      android:layout_width="wrap_content"
+                      android:layout_weight="1"/>
+        </TableRow>
+        <!-- 2 -->
+        <TableRow>
+            <TextView android:text="@string/accountName"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"/>
+            <EditText android:id="@+id/accountNameEditText"
+                      android:layout_height="wrap_content"
+                      android:layout_width="wrap_content"
+                      android:layout_weight="1"/>
+        </TableRow>
+        <!-- 3 -->
+        <TableRow>
+            <TextView android:text="@string/note"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"/>
+            <EditText android:id="@+id/noteEditText"
+                      android:layout_height="wrap_content"
+                      android:layout_width="wrap_content"
+                      android:layout_weight="1"/>
+        </TableRow>
+        <!-- 4 -->
+        <TableRow>
+            <TextView android:text="@string/phone"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"/>
+            <EditText android:id="@+id/phoneEditText"
+                      android:layout_height="wrap_content"
+                      android:layout_width="wrap_content"
+                      android:layout_weight="1"/>
+        </TableRow>
+        <!-- 5 -->
+        <TableRow>
+            <TextView android:text="@string/mobile"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"/>
+            <EditText android:id="@+id/mobileEditText"
+                      android:layout_height="wrap_content"
+                      android:layout_width="wrap_content"
+                      android:layout_weight="1"/>
+        </TableRow>
+        <!-- 6 -->
+        <TableRow>
+            <TextView android:text="@string/website"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"/>
+            <EditText android:id="@+id/websiteEditText"
+                      android:layout_height="wrap_content"
+                      android:layout_width="wrap_content"
+                      android:layout_weight="1"/>
+        </TableRow>
+        <!-- 7 -->
+        <TableRow>
+            <TextView android:text="@string/email"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"/>
+            <EditText android:id="@+id/emailEditText"
+                      android:layout_height="wrap_content"
+                      android:layout_width="wrap_content"
+                      android:layout_weight="1"/>
+        </TableRow>
+        <!-- 8 -->
+        <TableRow>
+            <Button android:id="@+id/contactSaveButton"
+                    android:text="@string/saveButton"
+                    />
+            <Button android:id="@+id/cancelButton"
+                    android:text="@string/cancelButton"
+                    />
+        </TableRow>
+    </TableLayout>
+</ScrollView>

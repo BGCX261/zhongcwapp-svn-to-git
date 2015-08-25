@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/login_background" >
+    
+    <include layout="@layout/header"/>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical"
+    	android:background="@drawable/round_rect"
+    	android:layout_marginTop="10dp"
+    	android:layout_marginLeft="10dp"
+    	android:layout_marginRight="10dp">
+    <LinearLayout
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+    	android:layout_marginTop="4dp" >
+        <TextView 
+            android:layout_width="80dp"
+    		android:layout_height="wrap_content"
+    		android:text="用户名："
+    		android:textColor="@drawable/red"
+    		android:gravity="right" />
+        <EditText
+            android:id="@+id/reg_username" 
+            android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:singleLine="true"
+    		android:layout_marginRight="4dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal" >
+        <TextView 
+            android:layout_width="80dp"
+    		android:layout_height="wrap_content"
+    		android:text="邮箱："
+    		android:textColor="@drawable/red"
+    		android:gravity="right" />
+        <EditText
+            android:id="@+id/reg_email" 
+            android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:inputType="textEmailAddress"
+    		android:singleLine="true"
+    		android:layout_marginRight="4dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal" >
+        <TextView 
+            android:layout_width="80dp"
+    		android:layout_height="wrap_content"
+    		android:text="密码："
+    		android:textColor="@drawable/red"
+    		android:gravity="right" />
+        <EditText
+            android:id="@+id/reg_pwd" 
+            android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:singleLine="true"
+    		android:password="true"
+    		android:layout_marginRight="4dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal" >
+        <TextView 
+            android:layout_width="80dp"
+    		android:layout_height="wrap_content"
+    		android:text="确认密码："
+    		android:textColor="@drawable/red"
+    		android:gravity="right" />
+        <EditText
+            android:id="@+id/reg_second_pwd" 
+            android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:singleLine="true"
+    		android:password="true"
+    		android:layout_marginRight="4dp"/>
+    </LinearLayout>
+    
+   </LinearLayout>
+</LinearLayout>

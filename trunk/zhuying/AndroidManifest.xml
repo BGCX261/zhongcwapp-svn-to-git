@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zhuying.android"
+    android:versionCode="3"
+    android:versionName="1.2" >
+
+    <uses-sdk android:minSdkVersion="8" />
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!-- SD Card -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 悬浮窗口 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- 网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        <activity
+            android:name=".activity.WelcomeActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.TabNaviActivity" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".activity.ActionListActivity" />
+        <!-- 联系人 -->
+        <activity android:name=".activity.ContactListActivity">
+        	<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<data android:mimeType="vnd.android.cursor.dir/vnd.zhuying.contacts" />
+			</intent-filter>
+        </activity>
+        <activity android:name=".activity.ContactDetailActivity">
+            <meta-data android:name="android.app.default_searchable"
+				android:value=".activity.AccountListActivity" />
+			<intent-filter>
+				<action android:name="android.intent.action.SEARCH" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+            <intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<data android:mimeType="vnd.android.cursor.item/vnd.zhuying.contacts" />
+			</intent-filter>
+        </activity>
+        <activity android:name=".activity.ContactEditlActivity" >
+            <intent-filter>
+				<action android:name="android.intent.action.INSERT" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<data android:mimeType="vnd.android.cursor.dir/vnd.zhuying.contacts" />
+			</intent-filter>
+            <intent-filter>
+				<action android:name="android.intent.action.EDIT" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<data android:mimeType="vnd.android.cursor.item/vnd.zhuying.contacts" />
+			</intent-filter>
+        </activity>
+        <!-- 记录 -->
+        <activity android:name=".activity.NoteEditActivity" >
+             <intent-filter>
+				<action android:name="android.intent.action.INSERT" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<data android:mimeType="vnd.android.cursor.dir/vnd.zhuying.records" />
+			</intent-filter>
+            <intent-filter>
+				<action android:name="android.intent.action.EDIT" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<data android:mimeType="vnd.android.cursor.item/vnd.zhuying.records" />
+			</intent-filter>
+        </activity>
+        <activity android:name=".activity.NoteDetailActivity" >
+            <intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<data android:mimeType="vnd.android.cursor.item/vnd.zhuying.records" />
+			</intent-filter>
+        </activity>
+        <!-- 公司 -->
+        <activity android:name=".activity.CompanyListActivity" >
+            <intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<data android:mimeType="vnd.android.cursor.dir/vnd.zhuying.companys" />
+			</intent-filter>
+        </activity>
+        <activity android:name=".activity.CompanyEditlActivity" >
+            <intent-filter>
+				<action android:name="android.intent.action.INSERT" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<data android:mimeType="vnd.android.cursor.dir/vnd.zhuying.companys" />
+			</intent-filter>
+            <intent-filter>
+				<action android:name="android.intent.action.EDIT" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<data android:mimeType="vnd.android.cursor.item/vnd.zhuying.companys" />
+			</intent-filter>
+        </activity>
+        <activity android:name=".activity.CompanyDetailActivity">
+            <intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<data android:mimeType="vnd.android.cursor.item/vnd.zhuying.companys" />
+			</intent-filter>
+        </activity>
+        <!-- 计划任务 -->
+        <activity android:name=".activity.TaskListActivity" >
+            <intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<data android:mimeType="vnd.android.cursor.dir/vnd.zhuying.plans" />
+			</intent-filter>
+        </activity>
+        <activity android:name=".activity.TaskEditlActivity" >
+            <intent-filter>
+				<action android:name="android.intent.action.INSERT" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<data android:mimeType="vnd.android.cursor.dir/vnd.zhuying.plans" />
+			</intent-filter>
+            <intent-filter>
+				<action android:name="android.intent.action.EDIT" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<data android:mimeType="vnd.android.cursor.item/vnd.zhuying.plans" />
+			</intent-filter>
+        </activity>
+        <activity android:name=".activity.TaskDetailActivity">
+            <intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<data android:mimeType="vnd.android.cursor.item/vnd.zhuying.plans" />
+			</intent-filter>
+        </activity>
+        
+        <activity android:name=".activity.SettingActivity" />
+        <activity android:name=".activity.AboutActivity" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.CommentDetailActivity" />
+        <activity android:name=".activity.SuggestActivity" />
+        <activity android:name=".activity.RegistActivity" />
+        <activity android:name=".activity.LoadingActivity" />
+        
+        <provider android:name=".dao.ContactProvider"
+			android:authorities="com.zhuying.provider.ContactProvider" />
+        <provider android:name=".dao.NoteProvider"
+			android:authorities="com.zhuying.provider.RecordProvider" />
+        <provider android:name=".dao.CompanyProvider"
+			android:authorities="com.zhuying.provider.CompanyProvider" />
+        <provider android:name=".dao.TaskProvider"
+			android:authorities="com.zhuying.provider.PlanProvider" />
+        <provider android:name=".dao.UserProvider"
+			android:authorities="com.zhuying.provider.UserProvider" />
+        <provider android:name=".dao.GroupProvider"
+			android:authorities="com.zhuying.provider.GroupProvider" />
+        <provider android:name=".dao.ActionProvider"
+			android:authorities="com.zhuying.provider.ActionProvider" />
+        <provider android:name=".dao.CategoryProvider"
+			android:authorities="com.zhuying.provider.CategoryProvider" />
+        <provider android:name=".dao.AuthorityProvider"
+			android:authorities="com.zhuying.provider.AuthorityProvider" />
+        <provider android:name=".dao.PhotoProvider"
+			android:authorities="com.zhuying.provider.PhotoProvider" />
+    </application>
+
+</manifest>

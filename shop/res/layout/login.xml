@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	style="@style/fill"
+	android:background="@drawable/background" >
+		<TextView 
+			android:text="手机号" 
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:textColor="@drawable/index_text"
+			android:textSize="16px"
+			android:textStyle="bold" />
+		<EditText 
+			android:text="13488758270" 
+			android:id="@+id/localMob" 
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content" />
+		<Button 
+			android:id="@+id/login"
+			android:text="登录"
+			android:textSize="16px" 
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content" />
+</LinearLayout>

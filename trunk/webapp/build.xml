@@ -1,0 +1,8 @@
+<project default="zhongcw">
+	<target name="zhongcw">
+		<echo>target zhongcw</echo>
+	</target>
+	<target name="lee" depends="zhongcw">
+		<echo>target lee</echo>
+	</target>
+</project>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">业务本</string>
+    <string name="about_content">“业务本”是面向销售员、经理人、中小微企业和团队设计的一款业务管理软件，融合了CRM系统和商务记事本软件的核心功能，是小企业、团队和职业人士进行客户管理、销售管理、人脉管理、计划管理和业务项目管理的便捷工具。</string>
+    
+    
+    <string name="xlistview_header_hint_normal">下拉即可同步数据...</string>
+    <string name="xlistview_header_hint_ready">松开即可同步数据...</string>
+    <string name="xlistview_header_hint_loading">加载中...</string>
+    <string name="xlistview_header_last_time">最后同步：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+</resources>

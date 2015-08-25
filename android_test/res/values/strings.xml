@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello</string>
+    <string name="app_name">Kevin Demo</string>
+    
+    <!-- 进度条消息 -->
+	<string name="progressDialog_message">数据加载中...</string>
+	
+	<string name="spinner_prompt">请选择</string>
+</resources>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/login_background">
+  	
+  	<include layout="@layout/header"/>
+  	
+  	<ScrollView 
+  	    android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:layout_weight="1" >
+		
+		<LinearLayout
+        	android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:orientation="vertical">
+	
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:background="@drawable/round_rect"
+    	android:layout_marginTop="16px"
+    	android:layout_marginLeft="15px"
+    	android:layout_marginRight="15px" >
+    	<!-- icon layout -->
+    	<RelativeLayout
+    	    android:id="@+id/contact_face" 
+    		android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:background="@drawable/company_icon"
+	    	android:layout_marginLeft="10px"
+	        android:layout_marginTop="10px" >
+	        <TextView 
+	            android:layout_width="34dp"
+	            android:layout_height="wrap_content"
+	            android:text="编辑"
+	            android:textSize="10sp"
+	            android:background="@color/photo"
+	            android:layout_alignParentBottom="true"
+	            android:gravity="center_horizontal" />
+    	</RelativeLayout>
+    	<TextView
+        	android:id="@+id/contact_company_label"
+        	android:layout_width="wrap_content" 
+        	android:layout_height="40dp"
+        	android:layout_toRightOf="@id/contact_face"
+        	android:layout_marginTop="10px"
+        	android:layout_marginLeft="10px"
+        	android:text="公司"
+        	android:textSize="18sp"
+        	android:textColor="@drawable/black"/>
+    	<EditText
+        	android:id="@+id/company_edit_name"
+        	android:layout_width="fill_parent" 
+        	android:layout_height="wrap_content"
+        	android:layout_toRightOf="@id/contact_company_label"
+        	android:layout_marginTop="10px"
+        	android:layout_marginLeft="10px"
+        	android:layout_marginRight="10px" />
+    </RelativeLayout>
+    
+    <!--  -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical"
+    	android:background="@drawable/round_rect"
+    	android:layout_marginTop="16px"
+    	android:layout_marginLeft="15px"
+    	android:layout_marginRight="15px" >
+    	<!-- 手机 -->
+        <LinearLayout 
+            android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:orientation="vertical"
+    		android:id="@+id/mobile_layout" >
+    		<RelativeLayout 
+            	android:layout_width="fill_parent"
+    			android:layout_height="wrap_content">
+    			<TextView
+    			    android:id="@+id/mobile_label" 
+    			    android:layout_width="wrap_content"
+    				android:layout_height="wrap_content"
+    				android:text="电话"
+    				android:textSize="16sp"
+        			android:textColor="@drawable/black"
+        			android:layout_marginLeft="10px"
+        			android:layout_centerVertical="true" />
+    			<ImageView
+    			    android:id="@+id/mobile_plus" 
+	        		android:layout_width="wrap_content"
+	        		android:layout_height="wrap_content" 
+	        		android:src="@drawable/plus"
+	        		android:layout_alignParentRight="true" />
+        	</RelativeLayout>
+        	<LinearLayout 
+	            android:layout_width="fill_parent"
+	    		android:layout_height="wrap_content"
+	    		android:orientation="vertical"
+	    		android:id="@+id/mobile_row_layout" />
+        </LinearLayout>
+        
+        <!-- 地址  -->
+        <LinearLayout 
+            android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:orientation="vertical"
+    		android:id="@+id/address_layout" >
+    		<RelativeLayout 
+            	android:layout_width="fill_parent"
+    			android:layout_height="wrap_content">
+    			<TextView
+    			    android:id="@+id/address_label" 
+    			    android:layout_width="wrap_content"
+    				android:layout_height="wrap_content"
+    				android:text="地址"
+    				android:textSize="16sp"
+        			android:textColor="@drawable/black"
+        			android:layout_marginLeft="10px"
+        			android:layout_centerVertical="true"/>
+    			<ImageView
+    			    android:id="@+id/address_plus" 
+	        		android:layout_width="wrap_content"
+	        		android:layout_height="wrap_content" 
+	        		android:src="@drawable/plus"
+	        		android:layout_alignParentRight="true" />
+        	</RelativeLayout>
+        	<LinearLayout 
+	            android:layout_width="fill_parent"
+	    		android:layout_height="wrap_content"
+	    		android:orientation="vertical"
+	    		android:id="@+id/address_row_layout" />
+        </LinearLayout>
+        
+        <!-- 网址  -->
+        <LinearLayout 
+            android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:orientation="vertical"
+    		android:id="@+id/website_layout" >
+    		<RelativeLayout 
+            	android:layout_width="fill_parent"
+    			android:layout_height="wrap_content">
+    			<TextView
+    			    android:id="@+id/website_label" 
+    			    android:layout_width="wrap_content"
+    				android:layout_height="wrap_content"
+    				android:text="网址"
+    				android:textSize="16sp"
+        			android:textColor="@drawable/black"
+        			android:layout_marginLeft="10px"
+        			android:layout_centerVertical="true"/>
+    			<ImageView
+    			    android:id="@+id/website_plus" 
+	        		android:layout_width="wrap_content"
+	        		android:layout_height="wrap_content" 
+	        		android:src="@drawable/plus"
+	        		android:layout_alignParentRight="true" />
+        	</RelativeLayout>
+        	<LinearLayout 
+	            android:layout_width="fill_parent"
+	    		android:layout_height="wrap_content"
+	    		android:orientation="vertical"
+	    		android:id="@+id/website_row_layout" />
+        </LinearLayout>
+        
+     </LinearLayout>
+   </LinearLayout>
+ </ScrollView>
+</LinearLayout>
+

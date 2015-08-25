@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" style="@style/fill" android:background="@drawable/background">
+	<!--  
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<TextView android:text="@string/startDate"
+			android:layout_height="wrap_content" android:layout_marginLeft="10px"
+			android:layout_width="90px" android:textColor="@drawable/black" />
+		<Button android:id="@+id/startDateBtn" android:layout_height="wrap_content"
+			android:layout_marginLeft="10px" android:layout_width="120px" />
+	</LinearLayout>
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<TextView android:text="@string/endDate"
+			android:layout_height="wrap_content" android:layout_marginLeft="10px"
+			android:layout_width="90px" android:textColor="@drawable/black" />
+		<Button android:id="@+id/endDateBtn" android:layout_height="wrap_content"
+			android:layout_marginLeft="10px" android:layout_width="120px" />
+		<Button android:id="@+id/queryBtn" android:text="查询"
+				android:layout_width="80px" android:layout_height="wrap_content" />
+	</LinearLayout>
+	-->
+
+	<ScrollView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_weight="1">
+			<ImageView android:id="@+id/chartImg" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" />
+	</ScrollView>
+</LinearLayout>

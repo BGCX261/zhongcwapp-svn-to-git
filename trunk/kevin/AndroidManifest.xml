@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.zhongcw.android" android:versionCode="1"
+	android:versionName="1.0">
+	<application android:icon="@drawable/icon" android:label="@string/app_name">
+		<activity android:name=".MyListActivity" android:label="@string/accountList">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".FormActivity" android:label="@string/accountForm"></activity>
+		<activity android:name=".CalendarActivity" android:label="@string/calendar"></activity>
+		<activity android:name=".CalendarFormActivity" android:label="@string/calendarForm"></activity>
+		<activity android:name=".CalendarListActivity" android:label="@string/calendarList"></activity>
+		<!-- 
+		<activity android:name=".Grid2" android:label="@string/grid"></activity>
+		 -->
+	</application>
+	<uses-permission android:name="android.permission.INTERNET" />
+</manifest> 

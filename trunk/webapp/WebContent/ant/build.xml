@@ -1,0 +1,11 @@
+<project name="example" default="greetuser">
+	<target name="robert">
+		<property name="user" value="Robert" />
+	</target>
+	<target name="jinny">
+		<property name="user" value="Jinny" />
+	</target>
+	<target name="greetuser">
+		<echo message="hello ${user}" />
+	</target>
+</project>

@@ -1,0 +1,20 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	style="@style/fill" android:orientation="vertical">
+	<LinearLayout android:orientation="horizontal" style="@style/fill" android:background="@drawable/card_item">
+		<LinearLayout android:orientation="horizontal"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_weight="1" 
+			android:onClick="callPhone">
+			<TextView android:id="@+id/phone" style="@style/small_shop_account_1st" />
+		</LinearLayout>
+		<ImageView 
+			android:src="@drawable/tel"
+			android:onClick="callPhone" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="110px"
+			android:layout_marginTop="1px"
+			android:layout_marginBottom="1px" />
+	</LinearLayout>
+</LinearLayout>

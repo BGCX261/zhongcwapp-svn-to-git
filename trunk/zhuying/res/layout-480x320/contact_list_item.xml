@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector_color">
+    <!-- 首字母 -->
+    <TextView
+        android:id="@+id/alpha"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pinyin_divider_shallow"
+        android:paddingLeft="10dip"
+        android:textColor="@drawable/black"
+        android:visibility="gone" />
+	<!-- 联系人 -->
+	<ImageView
+	    android:id="@+id/imageView"
+	    android:layout_below="@id/alpha"
+	    android:layout_width="50dp"
+	    android:layout_height="46dp"
+	    android:layout_marginLeft="4dp"
+	    android:scaleType="centerInside"
+	    android:layout_marginTop="2dp" />
+	<TextView
+	    android:id="@+id/name"
+	    android:layout_below="@id/alpha"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toRightOf="@id/imageView"
+	    android:layout_marginTop="6dp"
+	    android:layout_marginLeft="10px"
+	    android:singleLine="true"
+	    android:textColor="@drawable/black"
+	    android:textSize="16sp" />
+	<TextView
+	    android:id="@+id/company"
+	    android:layout_below="@id/name"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toRightOf="@id/imageView"
+	    android:layout_marginTop="6dp"
+	    android:layout_marginLeft="10px"
+	    android:singleLine="true"
+	    android:textColor="@drawable/gray" />
+</RelativeLayout>

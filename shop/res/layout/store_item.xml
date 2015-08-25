@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	style="@style/fill" >
+	
+	<LinearLayout android:orientation="horizontal" 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:background="@drawable/card_item" >
+		<TextView android:text="编码" style="@style/small_shop_label" />
+		<TextView android:id="@+id/inventoryCode" style="@style/small_shop_two_row_1st_item" />
+	</LinearLayout>
+	<include layout="@layout/card_seperator" />
+	
+	<LinearLayout android:orientation="horizontal" 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:background="@drawable/card_item" >
+		<TextView android:text="名称" style="@style/small_shop_label" />
+		<TextView android:id="@+id/name" style="@style/small_shop_two_row_1st_item" />
+	</LinearLayout>
+	<include layout="@layout/card_seperator" />
+	
+	<LinearLayout android:orientation="horizontal" 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:background="@drawable/card_item" >
+		<TextView android:text="规格" style="@style/small_shop_label" />
+		<TextView android:id="@+id/specification" style="@style/small_shop_two_row_1st_item" />
+	</LinearLayout>	
+	<include layout="@layout/card_seperator" />
+	
+	<LinearLayout android:orientation="horizontal" 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:background="@drawable/card_item" >
+		<TextView android:text="单位" style="@style/small_shop_label" />
+		<TextView android:id="@+id/unit" style="@style/small_shop_two_row_1st_item" />
+	</LinearLayout>
+	<include layout="@layout/card_seperator" />
+	
+	<LinearLayout android:orientation="horizontal" 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:background="@drawable/card_item" >
+		<TextView android:text="数量" style="@style/small_shop_label" />
+		<TextView android:id="@+id/count" style="@style/small_shop_two_row_1st_item" />
+	</LinearLayout>
+	<include layout="@layout/card_seperator" />
+	
+	<LinearLayout android:orientation="horizontal" 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:background="@drawable/card_item" >
+		<TextView android:text="成本" style="@style/small_shop_label" />
+		<TextView android:id="@+id/cost" style="@style/small_shop_two_row_1st_item" />
+	</LinearLayout>
+	<include layout="@layout/card_seperator" />
+	
+	<LinearLayout android:orientation="horizontal" 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:background="@drawable/card_item" >
+		<TextView android:text="金额" style="@style/small_shop_label" />
+		<TextView android:id="@+id/amount" style="@style/small_shop_two_row_1st_item" />
+	</LinearLayout>
+	<ImageView 
+			android:src="@drawable/group"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">伟库管客宝</string>
+	<string name="index_name">公司状态</string>
+
+	<!-- 客户模块 -->
+	<string name="contactName">联系人姓名</string>
+	<string name="accountName">*客户名称</string>
+	<string name="phone">电话</string>
+	<string name="mobile">手机</string>
+	<string name="email">电子邮箱</string>
+	<string name="website">网址</string>
+	<string name="address">地址</string>
+	<string name="note">备注</string>
+
+	<string name="empty">没有记录</string>
+	<!-- 菜单 -->
+	<string name="menu_add">新建</string>
+	<string name="menu_edit">修改</string>
+	<string name="menu_delete">删除</string>
+	<string name="menu_sync">同步</string>
+	<string name="menu_search">搜索</string>
+	<!-- 按钮 -->
+	<string name="saveBtn">保存</string>
+	<string name="cancelBtn">放弃</string>
+	<!-- 提示信息 -->
+	<string name="no_notes">没有记录</string>
+	<string name="accountList">客户列表</string>
+	<string name="accountView">查看客户</string>
+	<string name="accountEdit">编辑客户</string>
+
+	<!-- 日程模块 -->
+	<!-- 日程明细（Form） -->
+	<string name="calendar_subject">日程主题</string>
+	<string name="calendar_start_time">开始时间</string>
+	<string name="calendar_end_time">结束时间</string>
+	<string name="calendar_note">备注信息</string>
+	<string name="calendar_repeat_type">重复频率</string>
+	<string name="calendar_account">关联客户</string>
+	<string name="calendar_account_choice">客户</string>
+	<!-- 菜单 -->
+	<string name="menu_calendar">日历 </string>
+	<string name="menu_calendar_list">日程列表</string>
+	<string name="menu_calendar_edit">编辑</string>
+	<string name="menu_calendar_delete">删除</string>
+	<!-- 按钮 -->
+	<string name="calendar_add">新建</string>
+	<string name="calendar_sync">同步</string>
+	<string name="calendar_day_view">日视图</string>
+	<string name="account_sync">同步客户</string>
+	<string name="calendar_saveButton">保存</string>
+	<string name="calendar_cancelButton">取消</string>
+	<!-- 提示信息 -->
+	<string name="calendar">日程</string>
+	<string name="calendarForm">日程明细</string>
+	<string name="calendarList">日程列表</string>
+	<string name="calendar_view">日程查看</string>
+	<string name="checkbox_all_day">全天</string>
+
+	<string name="startDate">开始日期</string>
+	<string name="startTime">开始时间</string>
+	<string name="endDate">结束日期</string>
+	<string name="endTime">结束时间</string>
+
+	<string name="context_menu_edit">编辑选项</string>
+	<string name="context_menu_delete">删除选项 </string>
+	<!-- 设置模块 -->
+	<string name="settingTab">设置</string>
+	<string name="username">用户名</string>
+	<string name="password">密码</string>
+	<string name="before">同步之前几周</string>
+	<string name="after">同步之后几周</string>
+
+	<string name="aboutCRM">关于</string>
+	<string name="menu_about">关于</string>
+	<string name="aboutUS">用友伟库网是亚太地区最大的管理软件厂商用友软件（股票代码
+		600588）旗下网站，致力于为中小企业提供实用、易用、经济、安全的一站式服务，是最可信赖的在线营销与管理服务平台。伟库网自2008年7月8日全新上线，已迅速成长为中国管理型SaaS代表厂商，并获得“最具潜力SaaS厂商”和“互联网行业信用AAA级企业”。
+	</string>
+	<string name="servicePhone">客服电话：</string>
+	<string name="servicePhoneNumber">4006 600 588</string>
+	<string name="serviceWebSite">网址：</string>
+	<string name="serviceWebSiteAddress">http://www.k.cn</string>
+
+	<string name="userId">帐号</string>
+	<string name="login">登录</string>
+	<string name="register">注册</string>
+	<string name="local">本地</string>
+	<string name="submit">提交</string>
+
+	<string name="mobileTel">联系电话</string>
+	<string name="username2">*用户名称</string>
+	<string name="password2">*用户密码</string>
+	<string name="email2">*电子邮件</string>
+	<string name="enterpriseName">*公司名称</string>
+	<string name="verifycode">*校验图码</string>
+	<string name="search_label">搜索</string>
+	<string name="search_hint">客户或联系人名称</string>
+	
+	<string name="statistics">统计分析</string>
+
+</resources>

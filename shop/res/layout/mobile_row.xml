@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	style="@style/fill" android:orientation="vertical">
+	<LinearLayout android:orientation="horizontal" style="@style/fill" android:background="@drawable/card_item">
+		<LinearLayout android:orientation="horizontal"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:onClick="callMobile">
+			<TextView android:id="@+id/mobile" style="@style/small_shop_account_1st" />
+		</LinearLayout>
+		<ImageView 
+			android:src="@drawable/tel"
+			android:onClick="callMobile"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="25px"
+			android:layout_marginTop="1px"
+			android:layout_marginBottom="1px" />
+		<ImageView 
+			android:src="@drawable/sms"
+			android:onClick="sendSMS" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="10px"
+			android:layout_marginTop="1px"
+			android:layout_marginBottom="1px" />
+	</LinearLayout>
+</LinearLayout>

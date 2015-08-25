@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" >
+	<LinearLayout 
+		android:orientation="vertical" 
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<LinearLayout 
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:background="@drawable/list_item">
+			<TextView android:text="本日销售金额" style="@style/small_shop_index_text" />
+			<TextView android:id="@+id/todayAmount" android:text="0" style="@style/small_shop_two_row_2nd_item" />
+		</LinearLayout>
+		<include layout="@layout/list_line_seperator" />
+		
+		<LinearLayout 
+			android:orientation="vertical"
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content" 
+			android:background="@drawable/list_item">
+			<TextView android:text="本月销售金额" style="@style/small_shop_index_text"></TextView>
+			<TextView android:id="@+id/monthAmount" android:text="0" style="@style/small_shop_two_row_2nd_item" />
+		</LinearLayout>
+		<include layout="@layout/list_line_seperator" />
+		
+		<LinearLayout 
+			android:orientation="vertical"
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content" 
+			android:background="@drawable/list_item">
+			<TextView android:text="本日毛利" style="@style/small_shop_index_text"></TextView>
+			<TextView android:id="@+id/todayProfit" android:text="0" style="@style/small_shop_two_row_2nd_item" />
+		</LinearLayout>
+		<include layout="@layout/list_line_seperator" />
+		
+		<LinearLayout 
+			android:orientation="vertical"
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content" 
+			android:background="@drawable/list_item">
+			<TextView android:text="本月毛利" style="@style/small_shop_index_text"></TextView>
+			<TextView android:id="@+id/monthProfit" android:text="0" style="@style/small_shop_two_row_2nd_item" />
+		</LinearLayout>
+		<include layout="@layout/list_line_seperator" />
+		
+		<LinearLayout 
+			android:orientation="vertical"
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content" 
+			android:background="@drawable/list_item">
+			<TextView android:text="本日新增订单" style="@style/small_shop_index_text"></TextView>
+			<TextView android:id="@+id/todayOrder" android:text="0" style="@style/small_shop_two_row_2nd_item" />
+		</LinearLayout>
+		<include layout="@layout/list_line_seperator" />
+		
+		<LinearLayout 
+			android:orientation="vertical"
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content" 
+			android:background="@drawable/list_item">
+			<TextView android:text="本月新增订单" style="@style/small_shop_index_text"></TextView>
+			<TextView android:id="@+id/monthOrder" android:text="0" style="@style/small_shop_two_row_2nd_item" />
+		</LinearLayout>
+	</LinearLayout>
+</ScrollView>

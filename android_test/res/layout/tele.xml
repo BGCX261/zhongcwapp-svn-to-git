@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" >
+	<LinearLayout android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+		<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+			<TextView android:text="IMEI: "
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+			<TextView android:id="@+id/imei"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+		</LinearLayout>
+		<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+			<TextView android:text="tel: "
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+			<TextView android:id="@+id/tel"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+		</LinearLayout>	
+		<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+			<TextView android:text="ICCID: "
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+			<TextView android:id="@+id/ICCID"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+		</LinearLayout>	
+		<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+			<TextView android:text="IMSI: "
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+			<TextView android:id="@+id/imsi"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+		</LinearLayout>	
+	</LinearLayout>
+</ScrollView>

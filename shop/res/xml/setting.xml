@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<ListPreference android:key="before" android:title="@string/before"
+		android:entries="@array/week" android:entryValues="@array/weekValue"
+		android:defaultValue="1" />
+	<ListPreference android:key="after" android:title="@string/after"
+		android:entries="@array/week" android:entryValues="@array/weekValue"
+		android:defaultValue="1" />
+</PreferenceScreen>

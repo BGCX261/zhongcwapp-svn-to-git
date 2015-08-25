@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"  >
+	<Button
+		android:id="@+id/btn_hello"  
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:text="@string/hello"
+	    android:background="@drawable/btn_day"
+	    />
+</LinearLayout>
+
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android" 
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content" >
+    	<Button
+    		android:id="@+id/day" 
+    		android:layout_width="wrap_content"
+    		android:layout_height="30dp"
+    		android:background="@drawable/btn_day"
+    		android:text="日报"
+    		android:layout_centerHorizontal="true" />
+    	<Button
+    		android:id="@+id/btn_month" 
+    		android:layout_width="wrap_content"
+    		android:layout_height="30dp"
+    		android:background="@drawable/btn_day"
+    		android:layout_toRightOf="@id/day"
+    		android:text="月报" />
+    </RelativeLayout>
+-->
+
+	 <LinearLayout 
+	 xmlns:android="http://schemas.android.com/apk/res/android"
+	 	android:id="@+id/bottom_linear" 
+	 	android:layout_width="fill_parent" 
+	 	android:layout_height="50dip" 
+	 	android:gravity="center" 
+	 	android:visibility="gone">
+	    <ProgressBar android:layout_width="24dip" android:layout_height="24dip" android:layout_marginLeft="20dip" />
+	    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="正在加载，请稍后。。。" android:textColor="#FFFFFF" android:textSize="20sp" android:gravity="center"/>
+	 </LinearLayout>

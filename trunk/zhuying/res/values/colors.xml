@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<drawable name="white">#FFFFFF</drawable>
+	<drawable name="black">#000000</drawable>
+	<drawable name="gray">#C0C0C0</drawable>
+	<drawable name="red">#FF0000</drawable>
+	
+	<!-- Header背景色 -->
+	<drawable name="header_bg">#3E6DBB</drawable>
+	
+	<!-- 联系人列表：拼音分组分隔条 -->
+	<drawable name="pinyin_divider">#B3B3B3</drawable>
+	<drawable name="pinyin_divider_shallow">#D9D9D9</drawable>
+	<!-- 联系人明细：灰色 -->
+	<drawable name="contact_gray">#00000C</drawable>
+	
+	<!-- 最近行动：灰色 -->
+	<drawable name="action_gray">#555555</drawable>
+	<!-- 最近行动：灰色浅，记录人  -->
+	<drawable name="action_gray_shallow">#999999</drawable>
+	
+	<color name="task_outdate">#E38966</color>
+	<color name="task_today">#F7CF6B</color>
+	<color name="task_tomorrow">#9DABB4</color>
+	<color name="task_finish">#B3B3B3</color>
+	
+	<!-- list item selector -->
+	<drawable name="darkgray">#808080FF</drawable>
+    <drawable name="silver">#00ffffff</drawable>   <!-- 透明色 -->
+    <drawable name="blue">#4169E1</drawable>
+    
+    <!-- 上传头像文本背景色 -->
+    <color name="photo">#666666</color>
+    <color name="gray_sys">#888888</color>
+    
+    <!-- 列表项点击背景色 -->
+    <color name="list_item_press_color">#0378F0</color>
+</resources>
+

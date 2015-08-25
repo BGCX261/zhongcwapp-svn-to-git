@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	style="@style/fill"
+	android:background="@drawable/card_item" >
+	<LinearLayout android:orientation="vertical" style="@style/fill" >
+		<LinearLayout android:orientation="horizontal" style="@style/fill" android:background="@drawable/card_item">
+			<TextView android:id="@+id/accountName" style="@style/small_shop_account_1st" android:singleLine="true" />
+		</LinearLayout>
+		<include layout="@layout/card_seperator" />
+		
+		<LinearLayout android:orientation="horizontal" style="@style/fill" android:background="@drawable/card_item">
+			<TextView android:id="@+id/contactName" style="@style/small_shop_account_1st" android:singleLine="true" />
+		</LinearLayout>
+		<include layout="@layout/card_seperator" />
+		
+		<include android:id="@+id/phone_row" layout="@layout/phone_row" />
+		<include layout="@layout/card_seperator" />
+		
+		<include android:id="@+id/mobile_row" layout="@layout/mobile_row" />
+		<include layout="@layout/card_seperator" />
+	</LinearLayout>
+</ScrollView>

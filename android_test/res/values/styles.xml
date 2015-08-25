@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- 对话框 -->
+	<style name="dialog" parent="@android:style/Theme.Dialog">
+		<item name="android:windowFrame">@null</item>
+		<item name="android:windowIsFloating">true</item>
+		<item name="android:windowIsTranslucent">false</item>
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:background">#00000000</item>
+		<item name="android:windowBackground">@drawable/default_t</item>
+		<item name="android:backgroundDimEnabled">true</item>
+	</style>
+	
+	
+	<!-- Header Bar -->
+	<style name="headerbar">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">66px</item>
+		<item name="android:background">@drawable/headerbar</item>
+	</style>
+	<!-- Header Bar：返回按钮 -->
+	<style name="headerbar_return">
+		<item name="android:layout_width">100px</item>
+		<item name="android:layout_height">30dp</item>
+		<item name="android:background">@drawable/btn_return</item>
+		<item name="android:text">返回</item>
+		<item name="android:textSize">22px</item>
+		<item name="android:textColor">@drawable/return_text</item>
+		<item name="android:layout_centerVertical">true</item>
+		<item name="android:layout_marginLeft">5px</item>
+	</style>
+</resources>
